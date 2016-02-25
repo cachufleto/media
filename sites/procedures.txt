@@ -2,8 +2,28 @@ Etapes d'installation de media.domoquik.fr:
 
 installation de drupal en mode minimal de la version 7.42
 
-login : cachufleto
-mot de passe : 20Seajar
+login : Admin
+mot de passe : admin
+
+
+Activer le module de traduction
+Accueil » Administration >> moduls
+
+- local -> chequer -> valider
+
+mise en place:
+Accueil » Administration » Configuration » Regional and language >> Translate interface
+>>import
+- choix sur le dossier /profiles/minimal/translations/drupal-xxx.fr.po
+
+-local -> parametres
+
+cliquer sur la langue par defaut pour le françai -> valider
+
+
+Activer le module d'administration
+
+- Toolbar
 
 Mdules requis:
 
