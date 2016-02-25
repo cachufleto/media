@@ -1,0 +1,19 @@
+Etapes d'installation de media.domoquik.fr:
+
+installation de drupal en mode minimal de la version 7.42
+
+login : cachufleto
+mot de passe : 20Seajar
+
+Mdules requis:
+
+- editeur des pages
+- editeur de menu
+- formulaire de contacte
+- googlemap
+- plan du site
+- newsletter
+- partage sur réseaux
+
+
+
