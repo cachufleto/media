@@ -1,0 +1,66 @@
+Procedure d'installation de Drupal pour le project "MEDIA"
+
+*************** Parametrage de la Lange ****************
+temps d'execution : 10min
+URL :
+https://www.drupal.org/node/3060/release
+Upload V 7.43:
+    - https://ftp.drupal.org/files/projects/drupal-7.43.zip
+
+Copier le dossier dans www/
+renomer drupal-7.43 par media
+
+URL:
+localhost/media
+Choix d'une Installation basic
+
+Se loger en temps qu'Admin
+
+*************** Parametrage de la Lange ****************
+temps d'execution : 10min
+URL :
+http://localhost/media/admin/modules
+    activer le module Locale
+    Home » Administration » Configuration » Regional and language
+    Add language -> choix de la lange fr par defaut
+    télécharger le fichier .po URL: https://localize.drupal.org/download
+    http://ftp.drupal.org/files/translations/7.x/drupal/drupal-7.43.fr.po
+    aller dans:
+    Home » Administration » Configuration » Regional and language » Translate interface -> import
+    choisir le fichier local et executer l'import
+
+*************** activer tools bar ****************
+temps d'execution : 2min
+URL :
+http://localhost/media/admin/modules
+module Toolbar
+
+*************** activer menu ****************
+temps d'execution : 2min
+URL :
+http://localhost/media/admin/modules
+module Menu
+
+*************** Choix du theme ****************
+temps d'execution : 2min
+URL :
+http://localhost/media/admin/appearance
+theme Stark par defaut
+theme Garland pour l'administration
+
+*************** Creation d'un type de contenue ****************
+temps d'execution : 5min
+URL :
+http://localhost/media/admin/structure/types/add
+
+*************** Creation d'un type de contenue ****************
+temps d'execution : 5min
+URL :
+http://localhost/media/admin/structure/types/add
+
+*************** Creation des menus ****************
+temps d'execution : 30min
+
+*************** module menu déroulant ****************
+temps d'execution : 30min
+
