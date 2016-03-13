@@ -1,5 +1,5 @@
-name = menuDeroulant
-description = Menu déroulant developpeur php ifocop
+name = media
+description = ¨projet MEDIA developpeur php ifocop
 core = 7.x
 base theme = bartik
 

@@ -25,7 +25,7 @@ Activer le module d'administration
 
 - Toolbar
 
-Mdules requis:
+Modules requis:
 
 - editeur des pages
 - editeur de menu

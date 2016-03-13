@@ -96,7 +96,7 @@
     <?php endif; ?>
 
     <?php if ($site_name || $site_slogan): ?>
-      <div id="name-and-slogan"<?php if ($hide_site_name && $hide_site_slogan) { print ' class="element-invisible"'; } ?>>
+      <div id="name-and-slogan">
 
         <?php if ($site_name): ?>
           <?php if ($title): ?>
@@ -113,7 +113,7 @@
         <?php endif; ?>
 
         <?php if ($site_slogan): ?>
-          <div id="site-slogan"<?php if ($hide_site_slogan) { print ' class="element-invisible"'; } ?>>
+          <div id="site-slogan">
             <?php print $site_slogan; ?>
           </div>
         <?php endif; ?>
@@ -228,11 +228,11 @@
       </div> <!-- /#footer-columns -->
     <?php endif; ?>
 
-    <?php if ($page['footer']): ?>
-      <div id="footer" class="clearfix">
-        <?php print render($page['footer']); ?>
-      </div> <!-- /#footer -->
-    <?php endif; ?>
+      <?php if ($page['footer']): ?>
+        <div id="footer" class="clearfix">
+          <?php print render($page['footer']); ?>
+        </div> <!-- /#footer -->
+      <?php endif; ?>
 
   </div></div> <!-- /.section, /#footer-wrapper -->
 

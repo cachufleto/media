@@ -3,8 +3,8 @@
 * Implements hook_preprocess_HOOK
 */
 function menuDeroulant_preprocess_page(&$variables) {
-    $clean_menu=array();
-    $menu=menu_tree_all_data("main-menu");
+    $clean_menu = array();
+    $menu = menu_tree_all_data("main-menu");
 
     // Création du tableau que l'on enverra au moteur de template
     foreach($menu as $item) {
@@ -50,16 +50,18 @@ function theme_menuDeroulant_menu($menu) {
         }
 
         foreach($menu as $item) {
-            if($first==1)
-                $output.="<li class='inline clearfix'>".l(t($item["title"]),$item["link"]);
-            else $output.="<li>".l(t($item["title"]),$item["link"]);
+            if(is_array($item)){
+                if($first==1)
+                    $output.="<li class='inline clearfix'>".l(t($item["title"]),$item["link"]);
+                else $output.="<li class='inline clearfix'>".l(t($item["title"]),$item["link"]);
 
-            if(isset($item["childs"]))  {
-                if(count($item["childs"]>=1)) {
-                    $output.=theme_menuDeroulant_menu($item["childs"]);
+                if(isset($item["childs"]))  {
+                    if(count($item["childs"]>=1)) {
+                            $output.=theme_menuDeroulant_menu($item["childs"]);
+                    }
                 }
+                $output.="</li>";
             }
-            $output.="</li>";
         }
         $output.="</ul>";
     }
