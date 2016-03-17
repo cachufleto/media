@@ -25,14 +25,18 @@
         </div>
     </div>
     <div id="fil-ariane">
-        <?php print $breadcrumb; ?>
-        <div class="breadcrumb"> :: <?php print $title; ?></div>
+        <?php print $breadcrumb; ?><div class="breadcrumb"> :: <?php print $title; ?></div>
     </div>
-    <div id="main-wrapper">
-        <div id="main" class="clearfix">
-            <div id="content" class="column">
-                <div class="section">
-                    <?php print render($page['content']); ?>
+    <div>
+        <div>
+            <?php print render($page['haut-droite']); ?>
+        </div>
+        <div id="main-wrapper">
+            <div id="main" class="clearfix">
+                <div id="content" class="column">
+                    <div class="section">
+                        <?php print render($page['content']); ?>
+                    </div>
                 </div>
             </div>
         </div>
